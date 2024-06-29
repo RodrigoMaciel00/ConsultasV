@@ -1,0 +1,40 @@
+<!-- home/templates/home/index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vet Clinic</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home/style.css' %}">
+    <script src="{% static 'home/script.js' %}"></script>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à nossa Clínica Veterinária</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'register' %}">Cadastro</a></li>
+                <li><a href="{% url 'schedule' %}">Agendamento</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Nossos Serviços</h2>
+            <p>Aqui você encontra os melhores serviços para seu pet.</p>
+        </section>
+        <section>
+            <h2>Localização</h2>
+            <p>Estamos localizados na rua principal, nº 123, Centro.</p>
+        </section>
+        <section>
+            <h2>Doações</h2>
+            <p>Ajude nossa clínica a continuar atendendo pets em necessidade. Doe agora!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Clínica Veterinária</p>
+    </footer>
+</body>
+</html>
